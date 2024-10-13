@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Javascript class
+    </h2>
+    <p id="roll1"></p> 
+    <p id="r2">
+    </p>
+    <p id="r3"></p>
+    <script>
+        class student{
+            constructor(name,birthyear){
+                this.name = name;
+                this.birthyear = birthyear;
+
+            }
+            age(){
+                let date=new Date();
+                return date.getFullYear() - this.birthyear(); 
+                        }
+                    }
+
+                   
+        roll1 = new student("Eren",2005);
+        document.getElementById("roll1").innerHTML = "My name is" + roll1.name + "and I am" + roll1.birthyear +"years old"
+        roll2 =new student("Mikasa",2006);
+        document.getElementById("r2").innerHTML = "My name is" + roll2.name + "and I am"+roll1.birthyear+"years old"  
+          </script>
+</body>
+</html>
